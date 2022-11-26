@@ -16,7 +16,7 @@ class App
     @people = []
     @books = []
     @rentals = []
-    @person = nil
+    @person = []
   end
 
   def list_all_books
