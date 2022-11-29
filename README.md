@@ -58,7 +58,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [School Library] <a name="about-project">School library is a tool to record what books are in the library and who borrows them. The app that you will create will allow you to: Add new students or teachers, Add new books and Save records of who borrowed a given book and when.</a>
+# 📖 [School Library] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
@@ -217,9 +217,9 @@ Example:
 
 👤 **Saeqa Sultani**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [SaeqaSultani](https://github.com/SaeqaSultani)
+- Twitter: [SaeqaSultani](https://twitter.com/SaeqaSultani)
+- LinkedIn: [SaeqaSultani](https://www.linkedin.com/in/saeqa-sultani/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
