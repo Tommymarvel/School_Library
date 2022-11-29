@@ -1,13 +1,7 @@
-require './person'
 require './student'
 require './teacher'
 require './rental'
 require './book'
-require './classroom'
-require './nameable'
-require './decorator'
-require './capitalizedecorator'
-require './trimmerdecorator'
 
 class App
   attr_accessor :people, :book, :rental
@@ -15,13 +9,14 @@ class App
   def initialize()
     @people = []
     @books = []
+    @book = nil
     @rentals = []
-    @person = []
+    @person = nil
   end
 
   def list_all_books
     if @books.length.zero?
-      puts 'you don\'t have any books on your list'
+      puts 'There are no books found, Kindly add at least one book'
     else
       @books.each_with_index do |book, index|
         puts "#{index}) Title: #{book.title}, Author: #{book.author}"
@@ -31,7 +26,7 @@ class App
 
   def list_all_people
     if @people.length.zero?
-      puts 'you need at least one person'
+      puts 'You need at least one person'
     else
       @people.map.each_with_index do |person, index|
         puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
