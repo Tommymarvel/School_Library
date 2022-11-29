@@ -36,8 +36,8 @@ After you're finished please remove all the comments and instructions!
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[School Library\] ](#-school-library-)
-  - [🛠 Built With ](#-built-with-)
+- [📖 \[School Library\] School library is a tool to record what books are in the library and who borrows them. The app that you will create will allow you to: Add new students or teachers, Add new books and Save records of who borrowed a given book and when.](#-school-library-school-library-is-a-tool-to-record-what-books-are-in-the-library-and-who-borrows-them-the-app-that-you-will-create-will-allow-you-to-add-new-students-or-teachers-add-new-books-and-save-records-of-who-borrowed-a-given-book-and-when)
+  - [🛠 Built With  Ruby ](#-built-with--ruby-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
@@ -58,13 +58,13 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [School Library] <a name="School library is a tool to record what books are in the library and who borrows them. The app that you will create will allow you to: Add new students or teachers, Add new books and Save records of who borrowed a given book and when."></a>
+# 📖 [School Library] <a name="about-project">School library is a tool to record what books are in the library and who borrows them. The app that you will create will allow you to: Add new students or teachers, Add new books and Save records of who borrowed a given book and when.</a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[School Library]** is a tool to record what books are in the library and who borrows them. The app that you will create will allow you to: Add new students or teachers, Add new books and Save records of who borrowed a given book and when
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With <a name="built-with"> Ruby </a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
