@@ -36,11 +36,10 @@ After you're finished please remove all the comments and instructions!
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[School Library\] School library is a tool to record what books are in the library and who borrows them. The app that you will create will allow you to: Add new students or teachers, Add new books and Save records of who borrowed a given book and when.](#-school-library-school-library-is-a-tool-to-record-what-books-are-in-the-library-and-who-borrows-them-the-app-that-you-will-create-will-allow-you-to-add-new-students-or-teachers-add-new-books-and-save-records-of-who-borrowed-a-given-book-and-when)
+- [📖 \[School Library\] ](#-school-library-)
   - [🛠 Built With  Ruby ](#-built-with--ruby-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  <!-- - [🚀 Live Demo ](#-live-demo-) -->
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -71,23 +70,9 @@ After you're finished please remove all the comments and instructions!
 > Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
-  <summary>Client</summary>
+  <summary>Console</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://www.ruby-lang.org/en">Ruby</a></li>
   </ul>
 </details>
 
@@ -100,16 +85,6 @@ After you're finished please remove all the comments and instructions!
 - **[key_feature_1]**
 - **[key_feature_2]**
 - **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
