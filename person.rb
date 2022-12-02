@@ -1,8 +1,9 @@
 require './nameable'
+require 'json'
 
 class Person < Nameable
-  attr_reader :id, :rentals
-  attr_accessor :name, :age
+  attr_reader :rentals
+  attr_accessor :id, :name, :age
 
   def initialize(age, name = 'unknown', parent_permission = 'true')
     super()
