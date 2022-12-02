@@ -36,6 +36,7 @@ class App
       @people.map.each_with_index do |person, index|
         puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       end
+      return [] unless File.exists?("people.json")
     end
   end
 
