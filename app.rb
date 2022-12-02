@@ -2,6 +2,7 @@ require './student'
 require './teacher'
 require './rental'
 require './book'
+require 'json'
 
 class App
   attr_accessor :people, :book, :rental
@@ -12,6 +13,42 @@ class App
     @book = nil
     @rentals = []
     @person = nil
+    
+    if File.file?('people.json')
+      f = File.new('people.json', 'r')
+      f.gets.chomp.split('||').each do |person|
+        data = JSON.parse(person)
+        case data['json_class']
+        when 'Student'
+          person = Student.new(data['age'], data['name'], data['parent_permission'], data['classroom'])
+        when 'Teacher'
+          person = Teacher.new(data['age'], data['name'], data['parent_permission'], data['specialization'])
+        end
+        person.id = data['id']
+        @people << person
+      end
+      f.close()
+    end
+
+    if File.file?('books.json')
+      f = File.new('books.json', 'r')
+      f.gets.chomp.split('||').each do |book|
+        data = JSON.parse(book)
+        @books << Book.new(data['title'], data['author'])
+      end
+      f.close()
+    end
+
+    if File.file?('rentals.json')
+      f = File.new('rentals.json', 'r')
+      f.gets.chomp.split('||').each do |rental|
+        data = JSON.parse(rental)
+        person = @people.select { |person| person.id == data['person']['id'] }.first
+        book = @books.select { |book| book.title == data['book']['title'] }.first
+        @rentals << Rental.new(data['date'], book, person)
+      end
+      f.close()
+    end
   end
 
   def list_all_books
@@ -35,14 +72,14 @@ class App
   end
 
   def create_student
-    puts 'Greate! let\'s create the student!'
+    puts 'Great! Let\'s create the student!'
     print 'Student age: '
     stdage = gets.chomp.to_i
     print 'Student name: '
     stdname = gets.chomp
     print 'Student class: '
     stdclass = gets.chomp
-    print 'parent permission? true / false: '
+    print 'Parent permission? true / false: '
     std_p_p = gets.chomp
     case std_p_p
     when 'true'
@@ -74,8 +111,7 @@ class App
       teacher_name = gets.chomp
       print 'Teacher specialization: '
       teacher_specs = gets.chomp
-      teacher_permission = true
-      @people.push(Teacher.new(teacher_age, teacher_name, teacher_specs, teacher_permission))
+      @people.push(Teacher.new(teacher_age, teacher_name, true, teacher_specs))
       puts 'Teacher is created successfully'
     end
   end
@@ -130,6 +166,15 @@ class App
   end
 
   def quit_app
+    f = File.new('people.json', 'w')
+    f.puts("#{ @people.map(&:to_json).join('||') }")
+    f.close()
+    f = File.new('books.json', 'w')
+    f.puts("#{ @books.map(&:to_json).join('||') }")
+    f.close()
+    f = File.new('rentals.json', 'w')
+    f.puts("#{ @rentals.map(&:to_json).join('||') }")
+    f.close()
     puts 'Thank you for using my app!'
     exit(true)
   end
