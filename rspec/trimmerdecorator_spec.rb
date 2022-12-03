@@ -18,7 +18,8 @@ describe TrimmerDecorator do
 
   it 'trims strings longer than 10 letters' do
     # Yeah, that was Pablo Picasso's full name :))
-    name = TrimmerDecorator.new('Pablo Diego Hose Francesco de Paula Juan Nepomunceno Maria de los Remedios Ciprianos de la Sactissima Trinidad Ruyz y Picasso')
+    name = TrimmerDecorator.new('Pablo Diego Hose Francesco de Paula Juan Nepomunceno Maria de
+       los Remedios Ciprianos de la Sactissima Trinidad Ruyz y Picasso')
     expect(name.correct_name).to eq('Pablo Dieg')
   end
 end

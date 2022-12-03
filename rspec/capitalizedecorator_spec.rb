@@ -1,4 +1,4 @@
-require '../capitalizedecorator.rb'
+require '../capitalizedecorator'
 
 describe CapitalizeDecorator do
   it 'creates a new instance of the CapitalizeDecorator class' do

@@ -15,7 +15,7 @@ describe Classroom do
   it 'adds a student object to the array' do
     student = Student.new(19, 'Tommy', true, 'Physics')
     classroom = Classroom.new('Physics')
-    
+
     classroom.add_student(student)
     expect(classroom.student.length).to eq(1)
   end
